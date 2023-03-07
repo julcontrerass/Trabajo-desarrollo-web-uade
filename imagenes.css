@@ -1,0 +1,122 @@
+/*Julian Yago Contreras Lucero*/
+*{
+-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #070707;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+/*.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}*/
+/*.h3{
+    color: #fff;
+    font-weight: 300;
+    font-size:20px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}*/
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+    
+}
+.social {
+	position: fixed; 
+	left: 0; 
+	top: 200px; 
+	z-index: 2000; 
+}
+
+.social ul {
+list-style: none;
+}
+
+.social ul li a {
+display: inline-block;
+color:#fff;
+background: #000;
+padding: 10px 15px;
+text-decoration: none;
+-webkit-transition:all 500ms ease;
+-o-transition:all 500ms ease;
+transition:all 500ms ease;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.social ul li .icon-facebook {background:#3b5998;}
+.social ul li .icon-twitter {background: #00abf0;}
+.social ul li .icon-instagram {background: #d95232;}
+
+.social ul li a:hover {
+background: #000;
+padding: 10px 30px; 
+}
+.icon-Facebook:before {
+content: "\ea90";
+}
+.icon-instagram:before {
+content: "\ea92";
+}
+.icon-twitter:before {
+content: "\ea96";
+}
+
