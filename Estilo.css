@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .menu a{
-    font-size:18px;
+    font-size:30px;
     font-family: 'lato';
     font-weight: 300;
     display: inline-block;
@@ -199,6 +199,12 @@ header .boton {
     padding: 20px;
     box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
 }
+.card a {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px
+}
 
 .cards img {
     width: 140px;
@@ -282,7 +288,7 @@ footer {
 }
 
 .subtitulo-footer {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 64px;
 }
 
@@ -335,42 +341,53 @@ input[type="submit"] {
 h2{
     color:rgb(0, 0, 0);
 }
-.social {
-	position: fixed; 
-	left: 0; 
-	top: 200px; 
-	z-index: 2000; 
+
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
 }
 
-.social ul {
-list-style: none;
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
 }
 
-.social ul li a {
-display: inline-block;
-color:#fff;
-background: #000;
-padding: 10px 15px;
-text-decoration: none;
--webkit-transition:all 500ms ease;
--o-transition:all 500ms ease;
-transition:all 500ms ease;
+.icon-facebook {
+	background: #2E406E;
 }
 
-.social ul li .icon-facebook {background:#3b5998;}
-.social ul li .icon-twitter {background: #00abf0;}
-.social ul li .icon-instagram {background: #d95232;}
+.icon-twitter {
+	background: #339DC5;
+}
 
-.social ul li a:hover {
-background: #000;
-padding: 10px 30px; 
+.icon-youtube {
+	background: #E83028;
 }
-.icon-Facebook:before {
-content: "\ea90";
+
+.icon-instagram {
+	background: #3F60A5;
 }
-.icon-instagram:before {
-content: "\ea92";
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
 }
-.icon-twitter:before {
-content: "\ea96";
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
 }
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
